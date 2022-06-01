@@ -14,7 +14,7 @@ const NavBar = () => {
                     >
                         Kapehe
                     </NavLink>
-                    <NavLink to='/item' 
+                    <NavLink to='/shop' 
                        className='flex-child'
                        activeClassName='active'
                    >
