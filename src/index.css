@@ -51,3 +51,20 @@ a {
   padding: 3px;
   margin: 6px;
 }
+
+
+/* home-page */
+
+.home-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hello {
+  font-size: 35px;
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 270px;
+
+
+}
