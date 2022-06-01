@@ -1,9 +1,23 @@
-import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import React from 'react';
+
+import Home from './components/Home';
+import About from './components/About';
+import SingleItem from './components/SingleItem';
+import Item from './components/Item';
+import Project from './components/Project';
+
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
-  )
-}
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Home />} path='/'/>
+        <Route element={<About />} path='/about' />
+        <Route element={<SingleItem />} path='/item/:slug' />
+        <Route element={<Item />} path='/item' />
+        <Route element={<Project />} path='/project' />
+      </Routes>
+    </BrowserRouter>
+  );
+};
