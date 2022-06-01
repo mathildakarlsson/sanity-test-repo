@@ -13,4 +13,41 @@
   text-rendering: optimizeLegibility;
 }
 
+.header {
+  background-color: rgb(58, 72, 95);
+}
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-parent {
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.flex-child {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 3px;
+  margin-right: 4px;
+}
+
+.active {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.social-icons {
+  display: inline-flex;
+  padding: 3px;
+  margin: 6px;
+}

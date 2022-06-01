@@ -6,11 +6,13 @@ import About from './components/About';
 import SingleItem from './components/SingleItem';
 import Item from './components/Item';
 import Project from './components/Project';
+import NavBar from 'components/NavBar';
 
 
 export const App = () => {
   return (
     <BrowserRouter>
+    <NavBar />
       <Routes>
         <Route element={<Home />} path='/'/>
         <Route element={<About />} path='/about' />
